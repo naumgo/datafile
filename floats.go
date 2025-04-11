@@ -12,6 +12,7 @@ import (
 
 func GetFloats(fileName string) ([]float64, error) {
 	var numbers []float64
+	numbers = make ( []float64, 10)
 	file, err := os.Open(fileName)
 	if err != nil {
 		return numbers, err
